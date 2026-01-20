@@ -1,0 +1,15 @@
+/* Solución para superposición de imágenes en móvil */
+
+/* Media query para dispositivos móviles (768px y menos) */
+@media only screen and (max-width: 768px) {
+    
+    /* Ocultar la imagen pequeña en móvil */
+    .pt-0 .col-lg-6 .relative .rounded-1.w-50.abs.mb-min-50.end-0.bottom-0 {
+        display: none !important;
+    }
+    
+    /* Asegurar que la imagen grande ocupe todo el ancho disponible */
+    .pt-0 .col-lg-6 .relative .rounded-1.w-90 {
+        width: 100% !important;
+    }
+}
