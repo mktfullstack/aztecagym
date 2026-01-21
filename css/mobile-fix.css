@@ -13,3 +13,15 @@
         width: 100% !important;
     }
 }
+
+/* Mejora del efecto hover en la sección de servicios */
+/* Cambiar el overlay rojo fuerte por negro semi-transparente */
+#services-carousel .hover .abs.bg-color.hover-op-1 {
+    background: rgba(0, 0, 0, 0.7) !important; /* Negro con 70% de opacidad */
+}
+
+/* Alternativa más sutil con menos opacidad */
+/* Descomenta la siguiente línea si prefieres menos opacidad */
+/* #services-carousel .hover .abs.bg-color.hover-op-1 {
+    background: rgba(0, 0, 0, 0.5) !important;
+} */
