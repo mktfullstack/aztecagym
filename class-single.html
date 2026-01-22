@@ -90,7 +90,7 @@
                 <div class="row g-4">
                     <div class="col-lg-12 text-center">
                         <div class="spacer-double"></div>
-                        <h1 class="mb-0">Instalaciones</h1>
+                        <h1 class="mb-0">Nuestras Instalaciones</h1>
                         <ul class="crumb">
                             <li><a href="index.html">Inicio</a></li>
                             <li class="active">Instalaciones</li>
@@ -108,7 +108,7 @@
                 <div class="row g-4 gx-5">
                     <div class="col-lg-3">
                         <div class="me-lg-3">
-                            <a href="class-single.html" class="bg-color text-light d-block p-3 px-4 rounded-1 mb-3 relative"><h5 class="mb-0">Instalaciones</h5><i class="icofont-long-arrow-right absolute abs-middle fs-24 end-20px"></i></a>
+                            <a href="class-single.html" class="bg-color text-light d-block p-3 px-4 rounded-1 mb-3 relative"><h5 class="mb-0">Nuestras Instalaciones</h5><i class="icofont-long-arrow-right absolute abs-middle fs-24 end-20px"></i></a>
                             <a href="class-single.html" class="bg-dark-3 d-block p-3 px-4 rounded-1 mb-3"><h5 class="mb-0">Strength & Conditioning</h5></a>
                             
                             <a href="class-single.html" class="bg-dark-3 d-block p-3 px-4 rounded-1 mb-3"><h5 class="mb-0">HIIT & Group Training</h5></a>
@@ -429,36 +429,13 @@
     <div class="scrollbar-v show-on-scroll"></div>
 
     <!-- page preloader begin -->
-    <div class="preloader">
-        <div class="preloader-content">
-            <div class="preloader_img_circle"></div>
-            <div class="preloader_img">
-                <img src="images/preloader/fitness_preimg.gif" alt="fitness_preimg">
-            </div>
-        </div>
-    </div>
+    <div id="de-loader"></div>
     <!-- page preloader close -->
-    <!-- preloader original (oculto) -->
-    <div id="de-loader" style="display: none;"></div>
 
     <!-- Javascript Files
     ================================================== -->
     <script src="js/vendors.js"></script>
     <script src="js/designesia.js"></script>
-    
-    <!-- Preloader Script -->
-    <script>
-    /* ------------------------------------- Preloader ------------------------------------- */
-    $(window).on("load", function () {
-      setTimeout(function () {
-        var preloader = document.querySelector(".preloader");
-        if (preloader) {
-          preloader.style.opacity = "0";
-          $(".preloader").fadeOut("slow");
-        }
-      }, 500);
-    });
-    </script>
 
     <!-- Gallery Lightbox Script -->
     <script>
