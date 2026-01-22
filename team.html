@@ -389,13 +389,36 @@
     <div class="scrollbar-v show-on-scroll"></div>
 
     <!-- page preloader begin -->
-    <div id="de-loader"></div>
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader_img_circle"></div>
+            <div class="preloader_img">
+                <img src="images/preloader/fitness_preimg.gif" alt="fitness_preimg">
+            </div>
+        </div>
+    </div>
     <!-- page preloader close -->
+    <!-- preloader original (oculto) -->
+    <div id="de-loader" style="display: none;"></div>
 
     <!-- Javascript Files
     ================================================== -->
     <script src="js/vendors.js"></script>
     <script src="js/designesia.js"></script>
+    
+    <!-- Preloader Script -->
+    <script>
+    /* ------------------------------------- Preloader ------------------------------------- */
+    $(window).on("load", function () {
+      setTimeout(function () {
+        var preloader = document.querySelector(".preloader");
+        if (preloader) {
+          preloader.style.opacity = "0";
+          $(".preloader").fadeOut("slow");
+        }
+      }, 500);
+    });
+    </script>
 
 </body>
 
