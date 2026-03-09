@@ -73,9 +73,16 @@
     height: 3px;
     background: linear-gradient(90deg, #ff0000, #ff6b00);
     margin-top: 20px;
-    animation: barGrow 2s ease-out forwards;
-    animation-delay: 0.5s;
     max-width: 100%;
+    transition: width 0.3s ease-out;
+}
+
+.preloader-percentage {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
 }
 
 @keyframes barGrow {
